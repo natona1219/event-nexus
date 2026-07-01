@@ -695,7 +695,7 @@ section p {
 
     .footer-nav {
         flex-direction: column;
-        gap: 14px;
+        gap: 10px;
         margin-bottom: 24px;
     }   
 
@@ -706,6 +706,7 @@ section p {
     footer p {
         font-size: 12px;
         line-height: 1.6;
+        opacity: 0.8;
     }
 }
 
