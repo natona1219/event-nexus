@@ -633,6 +633,28 @@ section p {
     .contact-form button {
         width: 100%;
     }
+
+    .contact-form {
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .form-row {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .form-group {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        max-width: 100%;
+        min-width: 0;
+    }
 }
 
 footer {
