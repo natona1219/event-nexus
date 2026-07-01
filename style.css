@@ -598,7 +598,43 @@ section p {
     .contact-detail p {
         writing-mode: horizontal-tb;
     }
+
+    .contact {
+        padding: 80px 20px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        width: 100%;
+        gap: 24px;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 100%;
+        padding: 32px 22px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .form-group {
+        width: 100%;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .contact-form button {
+        width: 100%;
+    }
 }
+
 footer {
     background-color: #1f2937;
     color: white;
