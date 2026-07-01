@@ -17,13 +17,18 @@
         <img src="images/logo.png" alt="Event Nexus">
     </h1>
 
-    <nav>
+    <nav id="nav-menu">
         <a href="#home">HOME</a>
         <a href="#about">ABOUT</a>
         <a href="#service">SERVICE</a>
         <a href="#works">WORKS</a>
         <a href="#contact" class="contact-btn">CONTACT</a>
     </nav>
+
+    <button class="menu-toggle" id="menu-toggle">
+        ☰
+    </button>
+
     </header>
     <section id="home" class="hero">
         <div class="hero-content">
@@ -212,26 +217,46 @@
     </div>
 </footer>
 
-    <script>
-    const fadeElements = document.querySelectorAll('.fade-in');
-    const header = document.querySelector("header");
-    
-    window.addEventListener('scroll', () => {
-        fadeElements.forEach((element) => {
-            const position =element.getBoundingClientRect().top;
-            const screenHeight =window.innerHeight;
+<script>
+const fadeElements = document.querySelectorAll('.fade-in');
+const header = document.querySelector("header");
+const menuToggle = document.querySelector("#menu-toggle");
+const navMenu = document.querySelector("#nav-menu");
+const navLinks = document.querySelectorAll("#nav-menu a");
 
-            if (position < screenHeight - 100) {
-                element.classList.add('show');
-            }
-        });
-        if (window.scrollY > 50) {
-            header.classList.add("scrolled");
-        } else {
-            header.classList.remove("scrolled")
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    navMenu.classList.remove("active");
+    menuToggle.textContent = "☰";
+  });
+});
+
+menuToggle.addEventListener("click", () => {
+  navMenu.classList.toggle("active");
+
+  if (navMenu.classList.contains("active")) {
+    menuToggle.textContent = "×";
+  } else {
+    menuToggle.textContent = "☰";
+  }
+});
+    
+window.addEventListener('scroll', () => {
+    fadeElements.forEach((element) => {
+        const position =element.getBoundingClientRect().top;
+        const screenHeight =window.innerHeight;
+
+        if (position < screenHeight - 100) {
+            element.classList.add('show');
         }
     });
-    </script>
+    if (window.scrollY > 50) {
+        header.classList.add("scrolled");
+    } else {
+        header.classList.remove("scrolled");
+    }
+});
+</script>
 
 </body>
 </html>
