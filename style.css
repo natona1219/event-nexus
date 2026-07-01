@@ -516,6 +516,57 @@ section p {
         flex-direction: column;
         gap: 20px;
     }
+    .about {
+        flex-direction: column;
+        padding: 80px 24px;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .about-text,
+    .about-image {
+        flex: none;
+        width: 100%;
+    }
+
+    .about-text h2 {
+        font-size: 18p;
+    }
+
+    .about-text h3 {
+        font-size: 34px;
+        line-height: 1.4;
+    }
+
+    .about-text p {
+        font-size: 16px;
+        line-height: 1.9;
+    }
+
+    .about-image img {
+        width: 100%;
+        max-width: 360px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 100%;
+    }
+
+    .contact-info h3 {
+        font-size: 28px;
+        line-height: 1.5;
+    }
+
+    .contact-detail p {
+        font-size: 18px;
+        word-break: normal;
+    }
     .service-container,
     .works-container {
         flex-direction: column;
@@ -531,6 +582,21 @@ section p {
     }
     .hero {
         padding-top: 160px;
+    }
+
+    .about-text,
+    .service-text,
+    .work-text,
+    .contact-detail {
+        word-break: keep-all;
+        overflow-wrap: break-word;
+    }
+
+    .about-text h3,
+    .service-text h3,
+    .work-text h3,
+    .contact-detail p {
+        writing-mode: horizontal-tb;
     }
 }
 footer {
