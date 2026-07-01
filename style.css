@@ -516,6 +516,23 @@ section p {
         flex-direction: column;
         gap: 20px;
     }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        margin-top: 16px;
+    }
+
+    nav a {
+        margin-left: 0;
+    }
+
+    .contact-btn {
+        width: 180px;
+        text-align: center;
+    }
     .about {
         flex-direction: column;
         padding: 80px 24px;
