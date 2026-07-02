@@ -756,7 +756,7 @@ section {
 
 .contact-form {
     max-width: 100%;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .form-row {
@@ -774,6 +774,13 @@ section {
 .contact-form textarea {
     max-width: 100%;
     min-width: 0;
+}
+
+.contact-form textarea {
+    min-height: 180px;
+    position: relative;
+    pointer-events: auto;
+    z-index: 20px;
 }
 
 .footer-inner {
