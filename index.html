@@ -170,27 +170,44 @@
             </div>
         </div>
 
-        <form class="contact-form">
+        <form 
+        class="contact-form"
+        action="https://formspree.io/f/xvzjvaaa"
+        method="POST">
             <div class="form-row">
                 <div class="form-group">
                     <label>お名前</label>
-                    <input type="text" placeholder="例）山田 太郎">
+                    <input 
+                    type="text" 
+                    name="name"
+                    placeholder="例）山田 太郎"
+                    required>
                 </div>
 
                 <div class="form-group">
                     <label>会社名（任意）</label>
-                    <input type="text" placeholder="例）株式会社Event Nexus">
+                    <input 
+                    type="text" 
+                    name="company"
+                    placeholder="例）株式会社Event Nexus">
                 </div>
             </div>
 
             <div class="form-group">
                 <label>メールアドレス</label>
-                <input type="email" placeholder="例）example@event-nexus.co.jp">
+                <input 
+                type="email" 
+                name="email"
+                placeholder="例）example@event-nexus.co.jp"
+                required>
             </div>
 
             <div class="form-group">
                 <label>お問い合わせ内容</label>
-                <textarea placeholder="ご相談内容をご記入ください"></textarea>
+                <textarea 
+                name="message"
+                placeholder="ご相談内容をご記入ください"
+                required></textarea>
             </div>
 
             <button type="submit"><i class="fa-solid fa-paper-plane"></i>送信する</button>
