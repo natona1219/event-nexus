@@ -1013,3 +1013,20 @@ textarea:focus {
     margin-top: 6px;
     color: #777;
 }
+
+.contact::before,
+.contact::after {
+    pointer-events: none;
+    z-index: 0;
+}
+
+.contact-form {
+    position: relative;
+    z-index: 5;
+}
+
+.contact-form textarea {
+    position: relative;
+    z-index: 10;
+    pointer-events: auto;
+}
